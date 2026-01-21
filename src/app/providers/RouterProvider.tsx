@@ -8,8 +8,7 @@ import {
 } from "react-router-dom";
 import { LoginPage } from "../../pages/login/ui/LoginPage";
 import {UsersPage} from "../../pages/users/ui/UsersPage"
-
-const NotFoundPage: React.FC = () => <div>404 Not Found</div>;
+import {NotFoundPage} from "../../pages/not-found/ui/NotFoundPage"
 
 interface PrivateRouteProps {
   children: React.ReactNode;
