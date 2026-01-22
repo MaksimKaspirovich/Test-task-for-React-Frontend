@@ -39,12 +39,10 @@ const UsersPage: React.FC = () => {
 
   const handleCreateSuccess = () => {
     setIsCreateModalOpen(false);
-    refetch();
   };
 
   const handleEditSuccess = () => {
     setEditingUser(null);
-    refetch();
   };
 
   if (error) {
@@ -106,7 +104,7 @@ const UsersPage: React.FC = () => {
                     onClick={() => handleEditUser(user)}
                     src={user.avatar}
                     size={40}
-                    style={{ border: "1px solid #f0f0f0", cursor: "pointer" }}
+                    style={{ border: "1px solid #f0f0f0", cursor: "pointer", justifyContent: 'center'}}
                   />
                 }
                 title={
@@ -126,6 +124,9 @@ const UsersPage: React.FC = () => {
                     </Text>
                   </Space>
                 }
+                style={{
+                    alignItems: 'center'
+                }}
               />
             </List.Item>
           )}
