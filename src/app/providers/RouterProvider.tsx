@@ -7,8 +7,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import { LoginPage } from "../../pages/login/ui/LoginPage";
-import {UsersPage} from "../../pages/users/ui/UsersPage"
-import {NotFoundPage} from "../../pages/not-found/ui/NotFoundPage"
+import UsersPage from "../../pages/users/ui/UsersPage";
+import { NotFoundPage } from "../../pages/not-found/ui/NotFoundPage";
 
 interface PrivateRouteProps {
   children: React.ReactNode;
