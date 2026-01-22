@@ -39,12 +39,10 @@ const UsersPage: React.FC = () => {
 
   const handleCreateSuccess = () => {
     setIsCreateModalOpen(false);
-    refetch();
   };
 
   const handleEditSuccess = () => {
     setEditingUser(null);
-    refetch();
   };
 
   if (error) {
